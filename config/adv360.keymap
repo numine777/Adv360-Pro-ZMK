@@ -41,7 +41,7 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4    &kp N5                    &tog 1      &mo 3     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R     &kp T                     &none      &none      &kp Y      &kp U      &kp I      &kp O      &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F     &kp G                   &kp DEL  &kp LCTRL   &kp LALT                        &kp RMETA  &kp RCTRL   &kp LGUI     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
+   &kp ESC      &kp A     &kp S     &kp D      &kp F     &kp G                   &kp DEL  &kp LCTRL   &kp LALT                        &kp RMETA  &kp RCTRL     &tog 4     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V     &kp B                     &none      &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BSPC            &kp LEFT_SHIFT    &kp END  &kp PG_DN  &kp ENTER  &kp SPACE     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT   &mo 2
             >;
@@ -74,6 +74,26 @@
   &none         &none         &none         &none         &none            &none            &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR         &none                                   &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
   &none         &none         &none         &none         &none            &none                             &none        &none         &none         &none            &none         &none         &none                   &none   &none   &none   &none   &none   &none   &none
   &none         &none         &none    &bl BL_INC    &bl BL_DEC  &rgb_ug RGB_TOG                        &bl BL_TOG        &none         &none    &bl BL_TOG  &rgb_ug RGB_TOG    &bl BL_INC    &bl BL_DEC                   &none   &none   &none
+            >;
+        };
+
+        layer_Layer__4 {
+            bindings = <
+       &kp PIPE          &kp PLUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND            &trans  &trans  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp ASTERISK  &kp EXCLAMATION
+        &kp TAB     &kp SEMICOLON         &kp COMMA      &kp PERIOD                 &kp P          &kp Y            &trans  &trans      &kp F                  &kp G            &kp C              &kp R           &kp L    &kp BACKSLASH
+     &kp ESCAPE             &kp A             &kp O           &kp E                 &kp U          &kp I            &trans  &trans     &trans                                                     &trans          &trans           &tog 0   &kp D   &kp H   &kp T   &kp N   &kp S        &kp MINUS
+ &kp LEFT_SHIFT  &kp SINGLE_QUOTE             &kp Q           &kp J                 &kp K          &kp X            &trans  &trans     &trans                 &trans           &trans             &trans          &trans           &trans   &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RIGHT_SHIFT
+         &trans        &kp DOLLAR          &kp CAPS  &kp LEFT_ARROW       &kp RIGHT_ARROW         &trans             &mo 5  &trans     &trans                 &trans           &trans       &kp UP_ARROW  &kp DOWN_ARROW        &kp SLASH  &kp AT  &trans
+            >;
+        };
+
+        layer_Layer__5 {
+            bindings = <
+ &kp GRAVE     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp PERCENT
+    &trans     &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp POUND
+    &trans     &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans       &trans     &trans  &trans  &trans  &trans  &trans  &trans
+    &trans     &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans  &trans  &trans  &trans  &trans  &trans
+    &trans  &kp TILDE  &trans  &trans  &trans  &trans            &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &kp CARET  &trans
             >;
         };
 
